@@ -1,0 +1,20 @@
+{
+  "historical_events": {
+    "actual_mean_distance_m": 8720.293335843971,
+    "null_mean_distance_m": 21281.316513495785,
+    "null_std_m": 623.801642979813,
+    "p_value": 0.0,
+    "effect_size": 20.136245742556188,
+    "direction": "closer",
+    "significant": "True"
+  },
+  "historical_natural_disaster": {
+    "actual_mean_distance_m": 10154.245550520925,
+    "null_mean_distance_m": 21732.90821536923,
+    "null_std_m": 621.4097621369253,
+    "p_value": 0.0,
+    "effect_size": 18.632894702251214,
+    "direction": "closer",
+    "significant": "True"
+  }
+}

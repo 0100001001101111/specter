@@ -1,0 +1,156 @@
+{
+  "sf_reports": 1159,
+  "sf_earthquakes": 13748,
+  "clustering": {
+    "n_clusters": 48,
+    "n_clustered": "1066",
+    "p_value": 0.0,
+    "significant": "True",
+    "clusters": [
+      {
+        "label": 3,
+        "count": 196,
+        "centroid_lat": 37.77499857142857,
+        "centroid_lon": -122.4183553959184,
+        "city": "san francisco"
+      },
+      {
+        "label": 6,
+        "count": 192,
+        "centroid_lat": 37.33944409583333,
+        "centroid_lon": -121.89389445260417,
+        "city": "san jose"
+      },
+      {
+        "label": 1,
+        "count": 55,
+        "centroid_lat": 37.6688889,
+        "centroid_lon": -122.07972220000002,
+        "city": "hayward"
+      },
+      {
+        "label": 0,
+        "count": 53,
+        "centroid_lat": 37.804444399999994,
+        "centroid_lon": -122.26972219999998,
+        "city": "oakland"
+      },
+      {
+        "label": 4,
+        "count": 33,
+        "centroid_lat": 37.5483333,
+        "centroid_lon": -121.9875,
+        "city": "fremont"
+      },
+      {
+        "label": 2,
+        "count": 32,
+        "centroid_lat": 37.8716667,
+        "centroid_lon": -122.2716667,
+        "city": "berkeley"
+      },
+      {
+        "label": 37,
+        "count": 31,
+        "centroid_lat": 37.354166699999986,
+        "centroid_lon": -121.95416669999997,
+        "city": "santa clara"
+      },
+      {
+        "label": 12,
+        "count": 26,
+        "centroid_lat": 37.3688889,
+        "centroid_lon": -122.0352778,
+        "city": "sunnyvale"
+      },
+      {
+        "label": 21,
+        "count": 26,
+        "centroid_lat": 37.97360817307692,
+        "centroid_lon": -122.53004180769231,
+        "city": "san rafael"
+      },
+      {
+        "label": 7,
+        "count": 24,
+        "centroid_lat": 37.9780556,
+        "centroid_lon": -122.03000000000002,
+        "city": "concord"
+      }
+    ]
+  },
+  "seismic_correlation": {
+    "total_reports": 1152,
+    "within_7d_after": 1089,
+    "within_7d_before": 1084,
+    "after_before_ratio": 1.0046125461254614,
+    "histogram": [
+      "0",
+      "546",
+      "241",
+      "136",
+      "85",
+      "36",
+      "25",
+      "20",
+      "7",
+      "2",
+      "4",
+      "2",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ],
+    "peak_day": 2,
+    "quiet_days": 1487,
+    "quiet_reports": 11,
+    "quiet_rate": 0.007397444519166106,
+    "active_days": 18598,
+    "active_reports": 1141,
+    "active_rate": 0.06135068286912571,
+    "active_quiet_ratio": 8.29349685694454
+  },
+  "temporal": {
+    "night_ratio": 0.4826388888888889,
+    "night_elevated": true,
+    "peak_month": "Oct"
+  },
+  "hotspot": {
+    "lat": 37.77499999999997,
+    "lon": -122.42500000000001,
+    "count": 196,
+    "nearest_eq_dist_km": 3.248661495516728,
+    "nearest_eq_mag": 1.58,
+    "nearest_cemetery_km": 4.383351770727983
+  },
+  "comparison": {
+    "portland": {
+      "reports": 745,
+      "clusters": 8,
+      "clustering_p": 0.0,
+      "night_ratio": 0.638,
+      "active_quiet_ratio": 3.36,
+      "peak_day": 1
+    },
+    "sf": {
+      "reports": 1159,
+      "clusters": 48,
+      "clustering_p": 0.0,
+      "night_ratio": 0.4826388888888889,
+      "active_quiet_ratio": 8.29349685694454,
+      "peak_day": 2
+    }
+  },
+  "replicated": [
+    "Spatial clustering significance",
+    "Seismic active period effect (8.3x)",
+    "Night report bias (48.3%)"
+  ],
+  "not_replicated": []
+}

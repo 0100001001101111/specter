@@ -1,0 +1,365 @@
+{
+  "total_hotspots": 64,
+  "high_convergence_count": 1,
+  "multi_factor_count": 0,
+  "hotspots": [
+    {
+      "latitude": 45.52000000000005,
+      "longitude": -122.6800000000001,
+      "combined_score": 1.0,
+      "report_density_score": 1.0,
+      "historical_proximity_score": 0.7259497619157564
+    },
+    {
+      "latitude": 45.600000000000065,
+      "longitude": -122.60000000000012,
+      "combined_score": 0.4526553828722532,
+      "report_density_score": 0.0,
+      "historical_proximity_score": 0.9321455779223354
+    },
+    {
+      "latitude": 45.68000000000008,
+      "longitude": -122.26000000000019,
+      "combined_score": 0.3307061982780218,
+      "report_density_score": 0.0,
+      "historical_proximity_score": 0.681017683608024
+    },
+    {
+      "latitude": 45.600000000000065,
+      "longitude": -122.6800000000001,
+      "combined_score": 0.3058633568989273,
+      "report_density_score": 0.0,
+      "historical_proximity_score": 0.6298592403181001
+    },
+    {
+      "latitude": 45.48000000000005,
+      "longitude": -122.80000000000008,
+      "combined_score": 0.11683750734150296,
+      "report_density_score": 0.18045112781954886,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.50000000000005,
+      "longitude": -122.80000000000008,
+      "combined_score": 0.11683750734150296,
+      "report_density_score": 0.18045112781954886,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.52000000000005,
+      "longitude": -123.00000000000004,
+      "combined_score": 0.06815521261587673,
+      "report_density_score": 0.10526315789473684,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.52000000000005,
+      "longitude": -122.98000000000005,
+      "combined_score": 0.06815521261587673,
+      "report_density_score": 0.10526315789473684,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.36000000000003,
+      "longitude": -122.62000000000012,
+      "combined_score": 0.048682294725626234,
+      "report_density_score": 0.07518796992481203,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.36000000000003,
+      "longitude": -122.60000000000012,
+      "combined_score": 0.048682294725626234,
+      "report_density_score": 0.07518796992481203,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.42000000000004,
+      "longitude": -122.6800000000001,
+      "combined_score": 0.048682294725626234,
+      "report_density_score": 0.07518796992481203,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.42000000000004,
+      "longitude": -122.66000000000011,
+      "combined_score": 0.048682294725626234,
+      "report_density_score": 0.07518796992481203,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.42000000000004,
+      "longitude": -122.78000000000009,
+      "combined_score": 0.03894583578050099,
+      "report_density_score": 0.06015037593984962,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.42000000000004,
+      "longitude": -122.76000000000009,
+      "combined_score": 0.03894583578050099,
+      "report_density_score": 0.06015037593984962,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.44000000000004,
+      "longitude": -122.78000000000009,
+      "combined_score": 0.03894583578050099,
+      "report_density_score": 0.06015037593984962,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.44000000000004,
+      "longitude": -122.76000000000009,
+      "combined_score": 0.03894583578050099,
+      "report_density_score": 0.06015037593984962,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.50000000000005,
+      "longitude": -122.88000000000007,
+      "combined_score": 0.034077606307938366,
+      "report_density_score": 0.05263157894736842,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.50000000000005,
+      "longitude": -122.86000000000007,
+      "combined_score": 0.034077606307938366,
+      "report_density_score": 0.05263157894736842,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.50000000000005,
+      "longitude": -122.44000000000015,
+      "combined_score": 0.019472917890250494,
+      "report_density_score": 0.03007518796992481,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.50000000000005,
+      "longitude": -122.42000000000016,
+      "combined_score": 0.019472917890250494,
+      "report_density_score": 0.03007518796992481,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.540000000000056,
+      "longitude": -122.40000000000016,
+      "combined_score": 0.019472917890250494,
+      "report_density_score": 0.03007518796992481,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.540000000000056,
+      "longitude": -122.38000000000017,
+      "combined_score": 0.019472917890250494,
+      "report_density_score": 0.03007518796992481,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.30000000000002,
+      "longitude": -122.98000000000005,
+      "combined_score": 0.01460468841768787,
+      "report_density_score": 0.022556390977443608,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.30000000000002,
+      "longitude": -122.96000000000005,
+      "combined_score": 0.01460468841768787,
+      "report_density_score": 0.022556390977443608,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.36000000000003,
+      "longitude": -122.84000000000007,
+      "combined_score": 0.01460468841768787,
+      "report_density_score": 0.022556390977443608,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.2,
+      "longitude": -123.2,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.220000000000006,
+      "longitude": -123.2,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.220000000000006,
+      "longitude": -122.58000000000013,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.26000000000001,
+      "longitude": -122.7000000000001,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.26000000000001,
+      "longitude": -122.6800000000001,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.280000000000015,
+      "longitude": -122.34000000000017,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.280000000000015,
+      "longitude": -122.32000000000018,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.30000000000002,
+      "longitude": -123.18,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.30000000000002,
+      "longitude": -123.16000000000001,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.30000000000002,
+      "longitude": -122.78000000000009,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.30000000000002,
+      "longitude": -122.76000000000009,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.30000000000002,
+      "longitude": -122.34000000000017,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.36000000000003,
+      "longitude": -122.36000000000017,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.36000000000003,
+      "longitude": -122.34000000000017,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.38000000000003,
+      "longitude": -122.78000000000009,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.38000000000003,
+      "longitude": -122.76000000000009,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.400000000000034,
+      "longitude": -122.58000000000013,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.400000000000034,
+      "longitude": -122.56000000000013,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.44000000000004,
+      "longitude": -123.14000000000001,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.44000000000004,
+      "longitude": -123.12000000000002,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.52000000000005,
+      "longitude": -123.12000000000002,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.52000000000005,
+      "longitude": -123.10000000000002,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.52000000000005,
+      "longitude": -123.06000000000003,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.52000000000005,
+      "longitude": -123.04000000000003,
+      "combined_score": 0.009736458945125247,
+      "report_density_score": 0.015037593984962405,
+      "historical_proximity_score": 0.0
+    },
+    {
+      "latitude": 45.2,
+      "longitude": -122.98000000000005,
+      "combined_score": 0.0048682294725626235,
+      "report_density_score": 0.007518796992481203,
+      "historical_proximity_score": 0.0
+    }
+  ],
+  "layer_weights": {
+    "report_density": 2.0,
+    "cemetery_proximity": 1.0,
+    "historical_proximity": 1.5,
+    "power_proximity": 0.5,
+    "church_proximity": 0.5
+  },
+  "grid_resolution_degrees": 0.02
+}

@@ -1,0 +1,9 @@
+Metric,Portland,SF Bay Area,Replicates
+Total Reports,745,"1,159",-
+Total Earthquakes Analyzed,"1,175","13,748",-
+Spatial Clusters,8,48,✓
+Clustering p-value,< 0.0001,< 0.0001,✓
+Night Report Ratio,63.8%,48.3%,✓
+Active/Quiet Period Ratio,3.4x,8.3x,✓
+Peak Day After Earthquake,Day 1,Day 2,✓
+Reports Within 7d of Earthquake,37.7%,94.5%,✓

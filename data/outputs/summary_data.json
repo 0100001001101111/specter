@@ -1,0 +1,20 @@
+{
+  "stats": {
+    "phenomenon_types": {
+      "ufo_uap": 745
+    },
+    "total_reports": 745,
+    "infrastructure": {
+      "substation": 75,
+      "cell_tower": 925
+    },
+    "historical_events": 381
+  },
+  "results_available": [
+    "clustering_results",
+    "correlation_results",
+    "temporal_results",
+    "hotspot_results"
+  ],
+  "generated": "2026-01-12T01:05:07.259208"
+}

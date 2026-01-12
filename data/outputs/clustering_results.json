@@ -1,0 +1,121 @@
+{
+  "total_reports_analyzed": 261,
+  "dbscan_clusters": 8,
+  "dbscan_cluster_details": [
+    {
+      "cluster_label": 0,
+      "centroid_lat": 45.52361109999999,
+      "centroid_lon": -122.67499999999997,
+      "report_count": 133,
+      "date_range": "1973 - 2014",
+      "dominant_type": "ufo_uap",
+      "primary_city": "portland",
+      "cities": [
+        "portland",
+        "portland (40 mi. west of)",
+        "portland (suburbs)",
+        "portland (southeast)",
+        "portland (near)",
+        "portland (northeast area)",
+        "portland (garden home)"
+      ]
+    },
+    {
+      "cluster_label": 3,
+      "centroid_lat": 45.4872222,
+      "centroid_lon": -122.8025,
+      "report_count": 24,
+      "date_range": "1962 - 2013",
+      "dominant_type": "ufo_uap",
+      "primary_city": "beaverton",
+      "cities": [
+        "beaverton"
+      ]
+    },
+    {
+      "cluster_label": 6,
+      "centroid_lat": 45.523055600000006,
+      "centroid_lon": -122.98861110000003,
+      "report_count": 14,
+      "date_range": "1999 - 2014",
+      "dominant_type": "ufo_uap",
+      "primary_city": "hillsboro",
+      "cities": [
+        "hillsboro"
+      ]
+    },
+    {
+      "cluster_label": 1,
+      "centroid_lat": 45.420833300000005,
+      "centroid_lon": -122.6694444,
+      "report_count": 10,
+      "date_range": "1995 - 2013",
+      "dominant_type": "ufo_uap",
+      "primary_city": "lake oswego",
+      "cities": [
+        "lake oswego"
+      ]
+    },
+    {
+      "cluster_label": 2,
+      "centroid_lat": 45.3575,
+      "centroid_lon": -122.60555560000002,
+      "report_count": 9,
+      "date_range": "1995 - 2014",
+      "dominant_type": "ufo_uap",
+      "primary_city": "oregon city",
+      "cities": [
+        "oregon city"
+      ]
+    },
+    {
+      "cluster_label": 4,
+      "centroid_lat": 45.4313889,
+      "centroid_lon": -122.7702778,
+      "report_count": 8,
+      "date_range": "1992 - 2013",
+      "dominant_type": "ufo_uap",
+      "primary_city": "tigard",
+      "cities": [
+        "tigard (12 mi so of portland&#44 exit 290 i 5)",
+        "tigard (portland suburb)",
+        "tigard"
+      ]
+    },
+    {
+      "cluster_label": 5,
+      "centroid_lat": 45.494444400000006,
+      "centroid_lon": -122.86583329999999,
+      "report_count": 7,
+      "date_range": "1998 - 2014",
+      "dominant_type": "ufo_uap",
+      "primary_city": "aloha",
+      "cities": [
+        "aloha"
+      ]
+    },
+    {
+      "cluster_label": 7,
+      "centroid_lat": 45.446388899999995,
+      "centroid_lon": -122.63805560000002,
+      "report_count": 7,
+      "date_range": "1972 - 2013",
+      "dominant_type": "ufo_uap",
+      "primary_city": "milwaukie",
+      "cities": [
+        "milwaukie"
+      ]
+    }
+  ],
+  "significance_test": {
+    "actual_clusters": 8,
+    "actual_clustered_points": "212",
+    "null_mean_clusters": 9.84,
+    "null_std_clusters": 1.3979985693841037,
+    "p_value_clusters": 0.96,
+    "null_mean_clustered": 155.78,
+    "p_value_clustered": 0.0,
+    "significant": "True"
+  },
+  "hdbscan_clusters": 9
+}
