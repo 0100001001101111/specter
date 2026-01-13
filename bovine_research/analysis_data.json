@@ -1,0 +1,607 @@
+{
+  "mutilation_cases": [
+    {
+      "date": "1967-09",
+      "state": "Colorado",
+      "county": "Alamosa",
+      "lat": 37.47,
+      "lon": -105.87,
+      "animal": "horse",
+      "organs": [
+        "brain",
+        "lungs",
+        "heart",
+        "thyroid"
+      ],
+      "source": "FBI files"
+    },
+    {
+      "date": "1975-04",
+      "state": "Colorado",
+      "county": "Multiple",
+      "lat": 39.5,
+      "lon": -104.8,
+      "animal": "cattle",
+      "organs": [
+        "reproductive organs",
+        "rectum",
+        "tongue",
+        "eye"
+      ],
+      "source": "CBI files"
+    },
+    {
+      "date": "1975-05",
+      "state": "Colorado",
+      "county": "Elbert",
+      "lat": 39.3,
+      "lon": -104.1,
+      "animal": "cattle",
+      "organs": [
+        "udder",
+        "rectum",
+        "tongue"
+      ],
+      "source": "CBI investigation"
+    },
+    {
+      "date": "1975-06",
+      "state": "Colorado",
+      "county": "Logan",
+      "lat": 40.7,
+      "lon": -103.1,
+      "animal": "cattle",
+      "organs": [
+        "reproductive organs",
+        "eye",
+        "ear"
+      ],
+      "source": "CBI investigation"
+    },
+    {
+      "date": "1975-07",
+      "state": "Colorado",
+      "county": "Multiple",
+      "lat": 39.8,
+      "lon": -104.5,
+      "animal": "cattle",
+      "organs": [
+        "reproductive organs",
+        "rectum",
+        "tongue"
+      ],
+      "source": "CBI investigation"
+    },
+    {
+      "date": "1975-09",
+      "state": "Colorado",
+      "county": "El Paso",
+      "lat": 38.8,
+      "lon": -104.7,
+      "animal": "cattle",
+      "organs": [
+        "reproductive organs",
+        "rectum"
+      ],
+      "source": "Gazette-Telegraph"
+    },
+    {
+      "date": "1974-08-14",
+      "state": "Montana",
+      "county": "Cascade",
+      "lat": 47.5,
+      "lon": -111.0,
+      "animal": "cattle",
+      "organs": [
+        "unknown"
+      ],
+      "source": "Cascade County Sheriff"
+    },
+    {
+      "date": "1975-09-22",
+      "state": "Montana",
+      "county": "Cascade",
+      "lat": 47.5,
+      "lon": -111.3,
+      "animal": "cattle",
+      "organs": [
+        "udder",
+        "reproductive organs"
+      ],
+      "source": "Keith Wolverton"
+    },
+    {
+      "date": "1975-10",
+      "state": "Montana",
+      "county": "Cascade",
+      "lat": 47.4,
+      "lon": -110.9,
+      "animal": "cattle",
+      "organs": [
+        "tongue",
+        "jaw (skinned)",
+        "eye"
+      ],
+      "source": "Keith Wolverton"
+    },
+    {
+      "date": "1975-10",
+      "state": "Montana",
+      "county": "Teton",
+      "lat": 47.8,
+      "lon": -112.2,
+      "animal": "cattle",
+      "organs": [
+        "multiple organs"
+      ],
+      "source": "Sheriff report"
+    },
+    {
+      "date": "1975-10-18",
+      "state": "Montana",
+      "county": "Cascade",
+      "lat": 47.5,
+      "lon": -111.3,
+      "animal": "cattle",
+      "organs": [
+        "unknown"
+      ],
+      "source": "Cascade County Sheriff"
+    },
+    {
+      "date": "1975-11",
+      "state": "Montana",
+      "county": "Cascade",
+      "lat": 47.5,
+      "lon": -111.0,
+      "animal": "cattle",
+      "organs": [
+        "reproductive organs",
+        "rectum"
+      ],
+      "source": "Task force records"
+    },
+    {
+      "date": "1976-01",
+      "state": "Montana",
+      "county": "Cascade",
+      "lat": 47.4,
+      "lon": -111.2,
+      "animal": "cattle",
+      "organs": [
+        "reproductive organs",
+        "tongue"
+      ],
+      "source": "Keith Wolverton"
+    },
+    {
+      "date": "1976-03",
+      "state": "Montana",
+      "county": "Judith Basin",
+      "lat": 47.0,
+      "lon": -110.0,
+      "animal": "cattle",
+      "organs": [
+        "unknown"
+      ],
+      "source": "Task force"
+    },
+    {
+      "date": "1976-05",
+      "state": "Montana",
+      "county": "Chouteau",
+      "lat": 47.8,
+      "lon": -110.5,
+      "animal": "cattle",
+      "organs": [
+        "unknown"
+      ],
+      "source": "Task force"
+    },
+    {
+      "date": "1976-06-13",
+      "state": "New Mexico",
+      "county": "Rio Arriba",
+      "lat": 36.93,
+      "lon": -107.0,
+      "animal": "cattle",
+      "organs": [
+        "ear",
+        "tongue",
+        "udder",
+        "rectum"
+      ],
+      "source": "Gabe Valdez/Rommel Report"
+    },
+    {
+      "date": "1976-07",
+      "state": "New Mexico",
+      "county": "Rio Arriba",
+      "lat": 36.93,
+      "lon": -107.0,
+      "animal": "cattle",
+      "organs": [
+        "reproductive organs",
+        "rectum"
+      ],
+      "source": "Gabe Valdez"
+    },
+    {
+      "date": "1978-04-24",
+      "state": "New Mexico",
+      "county": "Rio Arriba",
+      "lat": 36.93,
+      "lon": -107.0,
+      "animal": "cattle",
+      "organs": [
+        "rectum",
+        "reproductive organs"
+      ],
+      "source": "Rommel Report"
+    },
+    {
+      "date": "1978-05-11",
+      "state": "New Mexico",
+      "county": "Rio Arriba",
+      "lat": 36.93,
+      "lon": -107.0,
+      "animal": "cattle",
+      "organs": [
+        "legs dislocated"
+      ],
+      "source": "Rommel Report"
+    },
+    {
+      "date": "1978-05-28",
+      "state": "New Mexico",
+      "county": "Rio Arriba",
+      "lat": 36.93,
+      "lon": -107.0,
+      "animal": "cattle",
+      "organs": [
+        "legs broken"
+      ],
+      "source": "Rommel Report"
+    },
+    {
+      "date": "1978-06-14",
+      "state": "New Mexico",
+      "county": "Rio Arriba",
+      "lat": 36.93,
+      "lon": -107.0,
+      "animal": "cattle",
+      "organs": [
+        "legs broken"
+      ],
+      "source": "Rommel Report"
+    },
+    {
+      "date": "1979-01-22",
+      "state": "New Mexico",
+      "county": "Eddy",
+      "lat": 32.4,
+      "lon": -104.2,
+      "animal": "horse",
+      "organs": [
+        "eyelids",
+        "ear tips",
+        "genitals"
+      ],
+      "source": "Rommel Report"
+    },
+    {
+      "date": "1979-04-08",
+      "state": "New Mexico",
+      "county": "Rio Arriba",
+      "lat": 36.93,
+      "lon": -107.0,
+      "animal": "cattle",
+      "organs": [
+        "unknown"
+      ],
+      "source": "Rommel Report"
+    },
+    {
+      "date": "1975-09-30",
+      "state": "Wyoming",
+      "county": "Campbell",
+      "lat": 44.3,
+      "lon": -105.5,
+      "animal": "cattle",
+      "organs": [
+        "reproductive organs",
+        "stomach"
+      ],
+      "source": "Casper Star-Tribune"
+    },
+    {
+      "date": "1975-10",
+      "state": "Wyoming",
+      "county": "Uinta",
+      "lat": 41.3,
+      "lon": -110.3,
+      "animal": "cattle",
+      "organs": [
+        "unknown"
+      ],
+      "source": "Sheriff report"
+    },
+    {
+      "date": "1975-10",
+      "state": "Wyoming",
+      "county": "Sublette",
+      "lat": 42.8,
+      "lon": -109.8,
+      "animal": "cattle",
+      "organs": [
+        "unknown"
+      ],
+      "source": "Sheriff report"
+    },
+    {
+      "date": "1978-04",
+      "state": "Wyoming",
+      "county": "Natrona",
+      "lat": 42.8,
+      "lon": -106.3,
+      "animal": "cattle",
+      "organs": [
+        "unknown"
+      ],
+      "source": "Casper Star-Tribune"
+    },
+    {
+      "date": "1973-09",
+      "state": "Kansas",
+      "county": "Multiple",
+      "lat": 39.0,
+      "lon": -97.4,
+      "animal": "cattle",
+      "organs": [
+        "reproductive organs",
+        "ears"
+      ],
+      "source": "FBI news clippings"
+    },
+    {
+      "date": "1973-10",
+      "state": "Kansas",
+      "county": "Multiple",
+      "lat": 39.2,
+      "lon": -97.4,
+      "animal": "cattle",
+      "organs": [
+        "reproductive organs",
+        "tongue"
+      ],
+      "source": "FBI news clippings"
+    }
+  ],
+  "cwd_by_state": [
+    {
+      "state": "Colorado",
+      "first_captive": 1967,
+      "first_wild": 1981,
+      "first_type": "captive",
+      "status": "endemic"
+    },
+    {
+      "state": "Wyoming",
+      "first_captive": 1979,
+      "first_wild": 1985,
+      "first_type": "captive",
+      "status": "endemic"
+    },
+    {
+      "state": "Nebraska",
+      "first_captive": null,
+      "first_wild": 1999,
+      "first_type": "wild",
+      "status": "endemic"
+    },
+    {
+      "state": "South Dakota",
+      "first_captive": 1997,
+      "first_wild": 2002,
+      "first_type": "captive",
+      "status": "endemic"
+    },
+    {
+      "state": "Wisconsin",
+      "first_captive": null,
+      "first_wild": 2002,
+      "first_type": "wild",
+      "status": "endemic"
+    },
+    {
+      "state": "New Mexico",
+      "first_captive": null,
+      "first_wild": 2002,
+      "first_type": "wild",
+      "status": "detected"
+    },
+    {
+      "state": "Kansas",
+      "first_captive": null,
+      "first_wild": 2006,
+      "first_type": "wild",
+      "status": "detected"
+    },
+    {
+      "state": "Montana",
+      "first_captive": 1999,
+      "first_wild": 2017,
+      "first_type": "captive",
+      "status": "detected"
+    },
+    {
+      "state": "Minnesota",
+      "first_captive": 2002,
+      "first_wild": 2010,
+      "first_type": "captive",
+      "status": "detected"
+    },
+    {
+      "state": "Michigan",
+      "first_captive": 2008,
+      "first_wild": null,
+      "first_type": "captive",
+      "status": "detected"
+    },
+    {
+      "state": "New York",
+      "first_captive": null,
+      "first_wild": null,
+      "first_type": "captive",
+      "status": "detected"
+    },
+    {
+      "state": "Texas",
+      "first_captive": null,
+      "first_wild": 2012,
+      "first_type": "wild",
+      "status": "endemic"
+    },
+    {
+      "state": "Missouri",
+      "first_captive": null,
+      "first_wild": null,
+      "first_type": "captive",
+      "status": "detected"
+    },
+    {
+      "state": "Arkansas",
+      "first_captive": null,
+      "first_wild": 2016,
+      "first_type": "wild",
+      "status": "detected"
+    },
+    {
+      "state": "Iowa",
+      "first_captive": null,
+      "first_wild": null,
+      "first_type": "wild",
+      "status": "detected"
+    }
+  ],
+  "fisher_test": {
+    "contingency_table": {
+      "mutilation_and_cwd": 6,
+      "mutilation_no_cwd": 14,
+      "cwd_no_mutilation": 21,
+      "neither": 3102
+    },
+    "expected_overlap_null": 0.17,
+    "observed_overlap": 6,
+    "enrichment_factor": 34.92,
+    "odds_ratio": 63.31,
+    "interpretation": "Overlap is 34.9x higher than expected by chance"
+  },
+  "hypothesis_scores": {
+    "NIDS_prion_hypothesis": {
+      "prediction_accuracy": {
+        "Great_Falls_Montana": 1.0,
+        "Northern_New_Mexico": 0.3,
+        "Argentina": 0.0,
+        "CWD_to_cattle": 0.0
+      },
+      "average_prediction_score": 0.325,
+      "explanatory_power": 0.6,
+      "falsifiability": 0.7,
+      "overall_score": 0.54
+    },
+    "captive_industry_hypothesis": {
+      "prediction_accuracy": {
+        "captive_first_in_states": 0.67,
+        "farm_imports_linked": 0.8,
+        "explains_rapid_spread": 0.8
+      },
+      "average_prediction_score": 0.76,
+      "explanatory_power": 0.7,
+      "falsifiability": 0.8,
+      "overall_score": 0.75
+    },
+    "scavenger_hypothesis": {
+      "prediction_accuracy": {
+        "seasonal_pattern": 0.3,
+        "soft_tissue_targeting": 0.9,
+        "experimental_replication": 0.85
+      },
+      "average_prediction_score": 0.68,
+      "explanatory_power": 0.6,
+      "falsifiability": 0.9,
+      "overall_score": 0.72
+    }
+  },
+  "argentina": {
+    "cervid_species": {
+      "native": [
+        {
+          "name": "Pampas deer",
+          "population": "<2000",
+          "status": "endangered"
+        },
+        {
+          "name": "South Andean deer (huemul)",
+          "population": "<1500",
+          "status": "endangered"
+        },
+        {
+          "name": "Pudu",
+          "population": "unknown",
+          "status": "vulnerable"
+        }
+      ],
+      "introduced": [
+        {
+          "name": "Red deer (Cervus elaphus)",
+          "population": "~1,000,000",
+          "introduced": 1905
+        },
+        {
+          "name": "Fallow deer",
+          "population": "~50,000",
+          "introduced": "early 1900s"
+        },
+        {
+          "name": "Axis deer",
+          "population": "~20,000",
+          "introduced": "early 1900s"
+        },
+        {
+          "name": "Rocky Mountain elk",
+          "population": "~5,000",
+          "introduced": "recent",
+          "note": "hunting reserves only"
+        }
+      ]
+    },
+    "prion_surveillance": {
+      "BSE_status": "Negligible risk (OIE)",
+      "BSE_cases": 0,
+      "scrapie_cases": 0,
+      "CWD_surveillance": "Not documented",
+      "CWD_cases": 0,
+      "notes": "No scrapie or BSE ever reported. OIE recognizes as negligible risk."
+    },
+    "mutilation_data": {
+      "first_reports": 2002,
+      "cases_2002": 400,
+      "total_cases_since_2002": 3500,
+      "peak_regions": [
+        "Santa Fe",
+        "La Pampa",
+        "Buenos Aires Province"
+      ],
+      "characteristics": "Similar to US cases - tongue, eyes, anus, reproductive organs"
+    },
+    "why_no_CWD": [
+      "Geographic isolation from North American CWD endemic zones",
+      "Different native cervid species (may have different susceptibility)",
+      "Limited cervid farming industry compared to US",
+      "Import restrictions on live cervids",
+      "Limited/no CWD surveillance in wild cervid populations",
+      "Introduced red deer are European origin, not North American"
+    ]
+  }
+}

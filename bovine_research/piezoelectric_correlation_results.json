@@ -1,0 +1,42 @@
+{
+  "mutilation_mean_magnetic": 19.165517241379305,
+  "mutilation_std": 219.8325746560434,
+  "mutilation_low_mag_pct": 31.03448275862069,
+  "mutilation_n": 29,
+  "random_us_mean_magnetic": 25.9972,
+  "random_us_low_mag_pct": 40.8,
+  "random_us_n": 500,
+  "specter_hotspot_mean": 30.0,
+  "specter_hotspot_low_mag_pct": 85.0,
+  "t_test_pvalue": 0.8565869280743629,
+  "mann_whitney_pvalue": 0.9327799981193248,
+  "chi_square_pvalue": 0.39656999886162925,
+  "verdict": "NO CLEAR CONNECTION",
+  "state_breakdown": {
+    "Colorado": {
+      "n": 6,
+      "mean": -22.916666666666668,
+      "low_mag_pct": 16.666666666666668
+    },
+    "Montana": {
+      "n": 9,
+      "mean": 101.6111111111111,
+      "low_mag_pct": 55.55555555555556
+    },
+    "New Mexico": {
+      "n": 8,
+      "mean": -144.925,
+      "low_mag_pct": 0.0
+    },
+    "Wyoming": {
+      "n": 4,
+      "mean": 128.45,
+      "low_mag_pct": 50.0
+    },
+    "Kansas": {
+      "n": 2,
+      "mean": 212.20000000000002,
+      "low_mag_pct": 50.0
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "analysis_date": "2026-01-13",
+    "methodology": "SPECTER Phase 4 checklist applied",
+    "n_tests": 18,
+    "bonferroni_alpha": 0.002777777777777778
+  },
+  "results": {
+    "earthlights": {
+      "n_locations": 15,
+      "phen_mean": 137.35333333333335,
+      "phen_low_mag_pct": 13.333333333333334,
+      "null_mean": 8.341599999999998,
+      "null_low_mag_pct": 52.2,
+      "t_pval": 0.0034959863122276088,
+      "u_pval": 0.012904470430304064,
+      "chi_pval": 0.006830331118384207,
+      "cohens_d": 0.622665496543265,
+      "survives_bonferroni": false
+    },
+    "high_strangeness": {
+      "n_locations": 11,
+      "phen_mean": 217.7,
+      "phen_low_mag_pct": 9.090909090909092,
+      "null_mean": 25.072800000000004,
+      "null_low_mag_pct": 41.0,
+      "t_pval": 0.0014243101263736126,
+      "u_pval": 0.005618228545621636,
+      "chi_pval": 0.06823641574274608,
+      "cohens_d": 0.9231326981141252,
+      "survives_bonferroni": true
+    },
+    "missing_411": {
+      "n_locations": 12,
+      "phen_mean": 84.44166666666668,
+      "phen_low_mag_pct": 33.333333333333336,
+      "null_mean": 9.3676,
+      "null_low_mag_pct": 52.4,
+      "t_pval": 0.18283238668477658,
+      "u_pval": 0.18325116375843054,
+      "chi_pval": 0.31055379219467777,
+      "cohens_d": 0.3264823647595057,
+      "survives_bonferroni": false
+    },
+    "the_hum": {
+      "n_locations": 6,
+      "phen_mean": -46.68333333333333,
+      "phen_low_mag_pct": 0.0,
+      "null_mean": 77.17220000000002,
+      "null_low_mag_pct": 40.6,
+      "t_pval": 0.18089636193682715,
+      "u_pval": 0.1753338456179987,
+      "chi_pval": 0.11004638678855057,
+      "cohens_d": -0.47610441954348004,
+      "survives_bonferroni": false
+    },
+    "sacred_sites": {
+      "n_locations": 15,
+      "phen_mean": 61.07333333333333,
+      "phen_low_mag_pct": 33.333333333333336,
+      "null_mean": 5.084000000000001,
+      "null_low_mag_pct": 55.0,
+      "t_pval": 0.2067705658604266,
+      "u_pval": 0.5930412810141861,
+      "chi_pval": 0.1624223109392996,
+      "cohens_d": 0.22032324438585574,
+      "survives_bonferroni": false
+    },
+    "hauntings": {
+      "n_locations": 15,
+      "phen_mean": 58.786666666666655,
+      "phen_low_mag_pct": 46.666666666666664,
+      "null_mean": 102.9284,
+      "null_low_mag_pct": 38.4,
+      "t_pval": 0.4450232809798053,
+      "u_pval": 0.4457789725537352,
+      "chi_pval": 0.7048357759715806,
+      "cohens_d": -0.21050768919457916,
+      "survives_bonferroni": false
+    }
+  },
+  "survival_summary": {
+    "earthlights": {
+      "level": 1,
+      "direction": "higher",
+      "low_mag_pct": 13.333333333333334
+    },
+    "high_strangeness": {
+      "level": 3,
+      "direction": "higher",
+      "low_mag_pct": 9.090909090909092
+    },
+    "missing_411": {
+      "level": 0,
+      "direction": "higher",
+      "low_mag_pct": 33.333333333333336
+    },
+    "the_hum": {
+      "level": 0,
+      "direction": "lower",
+      "low_mag_pct": 0.0
+    },
+    "sacred_sites": {
+      "level": 0,
+      "direction": "higher",
+      "low_mag_pct": 33.333333333333336
+    },
+    "hauntings": {
+      "level": 0,
+      "direction": "lower",
+      "low_mag_pct": 46.666666666666664
+    }
+  },
+  "strong_evidence": [
+    "high_strangeness"
+  ],
+  "weak_evidence": [
+    "earthlights"
+  ],
+  "no_evidence": [
+    "missing_411",
+    "the_hum",
+    "sacred_sites",
+    "hauntings"
+  ]
+}

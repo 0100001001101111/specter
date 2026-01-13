@@ -1,0 +1,134 @@
+{
+  "metadata": {
+    "description": "Coordinates for various anomalous phenomena for piezoelectric geology correlation testing",
+    "methodology_notes": [
+      "Each phenomenon needs comparison to APPROPRIATE null model",
+      "Earthlights: compare to random wilderness, not random US",
+      "Missing persons: compare to random National Park land",
+      "Sacred sites: compare to random mountainous terrain",
+      "Apply Bonferroni correction across ALL tests"
+    ],
+    "date_compiled": "2026-01-13"
+  },
+
+  "earthlights": {
+    "description": "Persistent anomalous light phenomena with long documentation history",
+    "locations": [
+      {"name": "Marfa Lights", "lat": 30.31, "lon": -104.02, "state": "TX", "first_reported": 1883, "source": "Multiple scientific studies"},
+      {"name": "Brown Mountain Lights", "lat": 35.96, "lon": -81.83, "state": "NC", "first_reported": 1913, "source": "USGS investigation 1922"},
+      {"name": "Paulding Light", "lat": 46.36, "lon": -89.17, "state": "MI", "first_reported": 1966, "source": "Local reports"},
+      {"name": "Hornet Spook Light", "lat": 36.94, "lon": -94.60, "state": "MO", "first_reported": 1866, "source": "Army Corps investigation"},
+      {"name": "Maco Light", "lat": 34.18, "lon": -78.04, "state": "NC", "first_reported": 1867, "source": "Railroad records"},
+      {"name": "Gurdon Light", "lat": 33.92, "lon": -93.15, "state": "AR", "first_reported": 1931, "source": "Local documentation"},
+      {"name": "Saratoga Light", "lat": 30.05, "lon": -94.18, "state": "TX", "first_reported": 1902, "source": "Big Thicket area reports"},
+      {"name": "Anson Light", "lat": 32.76, "lon": -99.90, "state": "TX", "first_reported": 1900, "source": "Cemetery reports"},
+      {"name": "Bragg Road Ghost Light", "lat": 30.42, "lon": -94.35, "state": "TX", "first_reported": 1920, "source": "Saratoga area"},
+      {"name": "Silver Cliff Lights", "lat": 38.14, "lon": -105.44, "state": "CO", "first_reported": 1880, "source": "Cemetery reports"},
+      {"name": "Joplin Spook Light", "lat": 36.94, "lon": -94.58, "state": "OK", "first_reported": 1881, "source": "Same as Hornet"},
+      {"name": "Summerville Light", "lat": 33.02, "lon": -80.18, "state": "SC", "first_reported": 1920, "source": "Railroad area"},
+      {"name": "Crossett Light", "lat": 33.13, "lon": -91.96, "state": "AR", "first_reported": 1910, "source": "Local reports"},
+      {"name": "Oviedo Lights", "lat": 28.67, "lon": -81.21, "state": "FL", "first_reported": 1950, "source": "Swamp area reports"},
+      {"name": "Yakima Lights", "lat": 46.60, "lon": -120.51, "state": "WA", "first_reported": 1972, "source": "Yakima Indian Reservation, J. Allen Hynek study"}
+    ],
+    "null_model": "random_wilderness_US"
+  },
+
+  "high_strangeness_zones": {
+    "description": "Areas with clusters of multiple anomaly types reported over decades",
+    "locations": [
+      {"name": "Bridgewater Triangle", "lat": 41.92, "lon": -71.02, "state": "MA", "area_km2": 518, "source": "Loren Coleman documentation"},
+      {"name": "Bennington Triangle", "lat": 42.88, "lon": -73.00, "state": "VT", "area_km2": 400, "source": "Joseph Citro research"},
+      {"name": "Skinwalker Ranch", "lat": 40.26, "lon": -109.89, "state": "UT", "area_km2": 2, "source": "NIDS investigation"},
+      {"name": "Mount Shasta", "lat": 41.41, "lon": -122.19, "state": "CA", "area_km2": 100, "source": "Long folklore history"},
+      {"name": "San Luis Valley", "lat": 37.50, "lon": -105.87, "state": "CO", "area_km2": 20000, "source": "Christopher O'Brien research"},
+      {"name": "Pine Barrens", "lat": 39.78, "lon": -74.51, "state": "NJ", "area_km2": 4500, "source": "Jersey Devil territory"},
+      {"name": "Point Pleasant", "lat": 38.84, "lon": -82.14, "state": "WV", "area_km2": 50, "source": "Mothman 1966-67"},
+      {"name": "Hudson Valley", "lat": 41.50, "lon": -73.96, "state": "NY", "area_km2": 2000, "source": "1980s wave documentation"},
+      {"name": "Sedona Vortexes", "lat": 34.87, "lon": -111.76, "state": "AZ", "area_km2": 100, "source": "New Age claims, testable geology"},
+      {"name": "Superstition Mountains", "lat": 33.43, "lon": -111.17, "state": "AZ", "area_km2": 650, "source": "Lost Dutchman area"},
+      {"name": "Mojave Desert Anomaly Zone", "lat": 35.01, "lon": -116.17, "state": "CA", "area_km2": 5000, "source": "Edwards AFB vicinity"}
+    ],
+    "null_model": "random_US_all"
+  },
+
+  "missing_411_clusters": {
+    "description": "Clusters of unusual disappearances identified by David Paulides",
+    "locations": [
+      {"name": "Yosemite Cluster", "lat": 37.75, "lon": -119.57, "state": "CA", "cases": 17, "source": "Missing 411: Western US"},
+      {"name": "Great Smoky Mountains", "lat": 35.61, "lon": -83.53, "state": "TN", "cases": 20, "source": "Missing 411: Eastern US"},
+      {"name": "Crater Lake", "lat": 42.91, "lon": -122.10, "state": "OR", "cases": 8, "source": "Missing 411: Western US"},
+      {"name": "Glacier National Park", "lat": 48.70, "lon": -113.80, "state": "MT", "cases": 12, "source": "Missing 411: Western US"},
+      {"name": "Rocky Mountain NP", "lat": 40.34, "lon": -105.68, "state": "CO", "cases": 9, "source": "Missing 411: Western US"},
+      {"name": "Olympic National Park", "lat": 47.80, "lon": -123.60, "state": "WA", "cases": 6, "source": "Missing 411: Western US"},
+      {"name": "Grand Canyon", "lat": 36.10, "lon": -112.09, "state": "AZ", "cases": 15, "source": "Missing 411: Western US"},
+      {"name": "Sequoia/Kings Canyon", "lat": 36.56, "lon": -118.77, "state": "CA", "cases": 7, "source": "Missing 411: Western US"},
+      {"name": "Mount Rainier", "lat": 46.85, "lon": -121.76, "state": "WA", "cases": 11, "source": "Missing 411: Western US"},
+      {"name": "Shenandoah", "lat": 38.53, "lon": -78.35, "state": "VA", "cases": 5, "source": "Missing 411: Eastern US"},
+      {"name": "Boundary Waters", "lat": 48.00, "lon": -91.50, "state": "MN", "cases": 8, "source": "Missing 411: Western US"},
+      {"name": "Adirondacks", "lat": 44.00, "lon": -74.25, "state": "NY", "cases": 6, "source": "Missing 411: Eastern US"}
+    ],
+    "null_model": "random_national_park_land"
+  },
+
+  "the_hum_locations": {
+    "description": "Locations with documented persistent low-frequency noise phenomena",
+    "locations": [
+      {"name": "Taos Hum", "lat": 36.41, "lon": -105.57, "state": "NM", "first_reported": 1991, "source": "University of New Mexico study"},
+      {"name": "Kokomo Hum", "lat": 40.49, "lon": -86.13, "state": "IN", "first_reported": 1999, "source": "Municipal investigation"},
+      {"name": "Windsor Hum", "lat": 42.31, "lon": -83.04, "state": "MI", "first_reported": 2011, "source": "Canadian/US investigation"},
+      {"name": "Auckland Hum", "lat": 36.85, "lon": -174.76, "country": "NZ", "first_reported": 2006, "source": "News reports"},
+      {"name": "Bristol Hum", "lat": 51.45, "lon": -2.59, "country": "UK", "first_reported": 1970, "source": "BBC documentation"},
+      {"name": "Largs Hum", "lat": 55.79, "lon": -4.87, "country": "UK", "first_reported": 1980, "source": "Scottish reports"},
+      {"name": "Woodland Hum", "lat": 38.68, "lon": -121.77, "state": "CA", "first_reported": 2016, "source": "Local news"},
+      {"name": "Wellington Hum", "lat": 26.66, "lon": -80.24, "state": "FL", "first_reported": 2015, "source": "Palm Beach investigation"},
+      {"name": "Hueytown Hum", "lat": 33.41, "lon": -87.02, "state": "AL", "first_reported": 2011, "source": "Local reports"},
+      {"name": "Bondi Hum", "lat": -33.89, "lon": 151.27, "country": "AU", "first_reported": 2009, "source": "Sydney area"}
+    ],
+    "null_model": "random_populated_areas",
+    "note": "Non-US locations will be excluded from magnetic grid analysis"
+  },
+
+  "sacred_sites": {
+    "description": "Native American sacred sites with documented spiritual significance",
+    "locations": [
+      {"name": "Bear Butte", "lat": 44.48, "lon": -103.43, "state": "SD", "tribe": "Lakota/Cheyenne", "source": "National Historic Landmark"},
+      {"name": "Devils Tower", "lat": 44.59, "lon": -104.72, "state": "WY", "tribe": "Multiple Plains tribes", "source": "National Monument"},
+      {"name": "Mount Graham", "lat": 32.70, "lon": -109.87, "state": "AZ", "tribe": "San Carlos Apache", "source": "Dzil Nchaa Si An"},
+      {"name": "San Francisco Peaks", "lat": 35.35, "lon": -111.68, "state": "AZ", "tribe": "Navajo/Hopi", "source": "Dook'o'oosliid"},
+      {"name": "Black Hills", "lat": 43.87, "lon": -103.46, "state": "SD", "tribe": "Lakota", "source": "Paha Sapa"},
+      {"name": "Mount Shasta", "lat": 41.41, "lon": -122.19, "state": "CA", "tribe": "Multiple California tribes", "source": "Documented sacred mountain"},
+      {"name": "Pilot Peak", "lat": 41.00, "lon": -114.05, "state": "NV", "tribe": "Western Shoshone", "source": "Navigation landmark"},
+      {"name": "Chimney Rock", "lat": 37.19, "lon": -107.31, "state": "CO", "tribe": "Ancestral Puebloan", "source": "National Monument"},
+      {"name": "Chaco Canyon", "lat": 36.06, "lon": -107.96, "state": "NM", "tribe": "Ancestral Puebloan", "source": "UNESCO World Heritage"},
+      {"name": "Canyon de Chelly", "lat": 36.13, "lon": -109.47, "state": "AZ", "tribe": "Navajo", "source": "National Monument"},
+      {"name": "Serpent Mound", "lat": 39.03, "lon": -83.43, "state": "OH", "tribe": "Unknown ancient", "source": "UNESCO tentative"},
+      {"name": "Poverty Point", "lat": 32.63, "lon": -91.41, "state": "LA", "tribe": "Unknown ancient", "source": "UNESCO World Heritage"},
+      {"name": "Cahokia Mounds", "lat": 38.66, "lon": -90.06, "state": "IL", "tribe": "Mississippian", "source": "UNESCO World Heritage"},
+      {"name": "Mesa Verde", "lat": 37.23, "lon": -108.46, "state": "CO", "tribe": "Ancestral Puebloan", "source": "UNESCO World Heritage"},
+      {"name": "Bighorn Medicine Wheel", "lat": 44.83, "lon": -107.92, "state": "WY", "tribe": "Multiple Plains tribes", "source": "National Historic Landmark"}
+    ],
+    "null_model": "random_mountainous_terrain"
+  },
+
+  "haunting_hotspots": {
+    "description": "Locations with documented paranormal claims and some scientific investigation",
+    "locations": [
+      {"name": "Gettysburg", "lat": 39.83, "lon": -77.23, "state": "PA", "type": "battlefield", "source": "Multiple investigations"},
+      {"name": "Eastern State Penitentiary", "lat": 39.97, "lon": -75.17, "state": "PA", "type": "prison", "source": "TAPS investigation"},
+      {"name": "Waverly Hills Sanatorium", "lat": 38.16, "lon": -85.81, "state": "KY", "type": "hospital", "source": "Multiple investigations"},
+      {"name": "Stanley Hotel", "lat": 40.38, "lon": -105.52, "state": "CO", "type": "hotel", "source": "TAPS investigation"},
+      {"name": "Winchester Mystery House", "lat": 37.32, "lon": -121.95, "state": "CA", "type": "house", "source": "Historical documentation"},
+      {"name": "Myrtles Plantation", "lat": 30.55, "lon": -91.43, "state": "LA", "type": "plantation", "source": "Smithsonian list"},
+      {"name": "Villisca Ax Murder House", "lat": 40.93, "lon": -94.98, "state": "IA", "type": "house", "source": "Historical murder site"},
+      {"name": "Ohio State Reformatory", "lat": 40.78, "lon": -82.60, "state": "OH", "type": "prison", "source": "Multiple investigations"},
+      {"name": "Trans-Allegheny Lunatic Asylum", "lat": 38.99, "lon": -80.47, "state": "WV", "type": "asylum", "source": "TAPS investigation"},
+      {"name": "Alcatraz", "lat": 37.83, "lon": -122.42, "state": "CA", "type": "prison", "source": "Historical documentation"},
+      {"name": "St. Augustine Lighthouse", "lat": 29.89, "lon": -81.29, "state": "FL", "type": "lighthouse", "source": "TAPS investigation"},
+      {"name": "Bell Witch Cave", "lat": 36.51, "lon": -87.29, "state": "TN", "type": "cave", "source": "Historical 1817 case"},
+      {"name": "Bachelor's Grove Cemetery", "lat": 41.66, "lon": -87.82, "state": "IL", "type": "cemetery", "source": "Ghost Research Society"},
+      {"name": "Lizzie Borden House", "lat": 41.70, "lon": -71.16, "state": "MA", "type": "house", "source": "Historical murder site"},
+      {"name": "RMS Queen Mary", "lat": 33.75, "lon": -118.19, "state": "CA", "type": "ship", "source": "Multiple investigations"}
+    ],
+    "null_model": "random_historic_sites"
+  }
+}

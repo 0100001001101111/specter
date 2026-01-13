@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOVINE Project: NIDS Prion Surveillance Hypothesis Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #eee;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            height: 100vh;
+        }
+        .sidebar {
+            background: #16213e;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        h1 {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            color: #e94560;
+        }
+        h2 {
+            font-size: 1.1em;
+            margin: 20px 0 10px;
+            color: #0f3460;
+            background: #e94560;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        .legend {
+            margin: 15px 0;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+            font-size: 0.9em;
+        }
+        .legend-marker {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+        .legend-marker.triangle {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 18px solid;
+            border-radius: 0;
+        }
+        .mutilation { background: #ff6b6b; }
+        .triangle.mutilation { border-bottom-color: #ff6b6b; background: none; }
+        .cwd { background: #4ecdc4; }
+        .prediction-line { background: #f7d794; }
+
+        .timeline {
+            background: #0f3460;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .timeline-row {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+            font-size: 0.8em;
+        }
+        .timeline-label {
+            width: 80px;
+            font-weight: bold;
+        }
+        .timeline-bar {
+            flex: 1;
+            height: 20px;
+            background: #1a1a2e;
+            border-radius: 3px;
+            position: relative;
+        }
+        .timeline-marker {
+            position: absolute;
+            height: 100%;
+            border-radius: 3px;
+        }
+        .marker-mutilation {
+            background: rgba(255, 107, 107, 0.7);
+        }
+        .marker-cwd {
+            background: rgba(78, 205, 196, 0.7);
+        }
+
+        .scorecard {
+            margin: 15px 0;
+        }
+        .score-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin: 5px 0;
+            background: #0f3460;
+            border-radius: 5px;
+            font-size: 0.85em;
+        }
+        .score-status {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .confirmed { background: #27ae60; }
+        .partial { background: #f39c12; }
+        .unconfirmed { background: #7f8c8d; }
+
+        #map {
+            height: 100%;
+        }
+
+        .info-box {
+            background: #0f3460;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-size: 0.85em;
+            line-height: 1.5;
+        }
+        .highlight { color: #e94560; font-weight: bold; }
+
+        .leaflet-popup-content-wrapper {
+            background: #16213e;
+            color: #eee;
+        }
+        .leaflet-popup-tip {
+            background: #16213e;
+        }
+        .popup-title {
+            font-weight: bold;
+            color: #e94560;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>BOVINE Project</h1>
+            <p style="font-size: 0.9em; opacity: 0.8;">NIDS Prion Surveillance Hypothesis</p>
+
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-marker triangle mutilation"></div>
+                    <span>Mutilation Cluster (1970s)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-marker cwd"></div>
+                    <span>CWD Detection</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-marker prediction-line"></div>
+                    <span>NIDS Prediction Link</span>
+                </div>
+            </div>
+
+            <h2>NIDS 2003 Predictions</h2>
+            <div class="scorecard">
+                <div class="score-item">
+                    <div class="score-status confirmed">&#10003;</div>
+                    <div>
+                        <strong>Great Falls, MT</strong><br>
+                        <small>Mutilations 1975 &rarr; CWD 2023 (47yr lag)</small>
+                    </div>
+                </div>
+                <div class="score-item">
+                    <div class="score-status partial">~</div>
+                    <div>
+                        <strong>Northern New Mexico</strong><br>
+                        <small>CWD arrived but wrong region (300mi off)</small>
+                    </div>
+                </div>
+                <div class="score-item">
+                    <div class="score-status unconfirmed">?</div>
+                    <div>
+                        <strong>Argentina</strong><br>
+                        <small>Mutilations present, no CWD yet</small>
+                    </div>
+                </div>
+                <div class="score-item">
+                    <div class="score-status unconfirmed">?</div>
+                    <div>
+                        <strong>CWD to Cattle</strong><br>
+                        <small>Experimental only, no natural cases</small>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Timeline: Great Falls</h2>
+            <div class="timeline">
+                <div class="timeline-row">
+                    <div class="timeline-label">1970</div>
+                    <div class="timeline-bar">
+                        <!-- Mutilation cluster 1974-1977 -->
+                        <div class="timeline-marker marker-mutilation"
+                             style="left: 8%; width: 6%;"
+                             title="Mutilations 1974-1977"></div>
+                    </div>
+                    <div class="timeline-label" style="text-align: right;">2025</div>
+                </div>
+                <div class="timeline-row">
+                    <div class="timeline-label"></div>
+                    <div class="timeline-bar">
+                        <!-- CWD 2023 -->
+                        <div class="timeline-marker marker-cwd"
+                             style="left: 96%; width: 4%;"
+                             title="CWD 2023"></div>
+                    </div>
+                    <div class="timeline-label"></div>
+                </div>
+                <div style="text-align: center; margin-top: 10px; font-size: 0.8em;">
+                    <span class="highlight">47 YEAR LAG</span> between mutilation peak and CWD
+                </div>
+            </div>
+
+            <h2>Null Hypothesis Problem</h2>
+            <div class="info-box">
+                <p><strong>CWD Spread Rate:</strong> ~7 km/year</p>
+                <p><strong>Fort Collins to Great Falls:</strong> ~1040 km</p>
+                <p><strong>Expected arrival:</strong> Year 2116</p>
+                <p><strong>Actual arrival:</strong> Year 2023</p>
+                <p style="margin-top: 10px;">
+                    CWD arrived <span class="highlight">93 years early</span> in the exact
+                    county where mutilations clustered in 1975.
+                </p>
+            </div>
+
+            <h2>Key Questions</h2>
+            <div class="info-box">
+                <ol style="padding-left: 20px;">
+                    <li>Why did CWD reach Great Falls so fast?</li>
+                    <li>Why hasn't CWD spread to Dulce, NM?</li>
+                    <li>Will Argentina eventually detect CWD?</li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="map"></div>
+    </div>
+
+    <script>
+        // Initialize map centered on US
+        const map = L.map('map').setView([40, -105], 5);
+
+        // Dark tile layer
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; OpenStreetMap, &copy; CartoDB'
+        }).addTo(map);
+
+        // Custom icons
+        const mutilationIcon = L.divIcon({
+            className: 'custom-icon',
+            html: '<svg width="24" height="24" viewBox="0 0 24 24"><polygon points="12,2 22,20 2,20" fill="#ff6b6b" stroke="#fff" stroke-width="1"/></svg>',
+            iconSize: [24, 24],
+            iconAnchor: [12, 20]
+        });
+
+        const cwdIcon = L.divIcon({
+            className: 'custom-icon',
+            html: '<svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="#4ecdc4" stroke="#fff" stroke-width="2"/></svg>',
+            iconSize: [20, 20],
+            iconAnchor: [10, 10]
+        });
+
+        const originIcon = L.divIcon({
+            className: 'custom-icon',
+            html: '<svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#e94560" stroke="#fff" stroke-width="2"/><text x="12" y="16" text-anchor="middle" fill="#fff" font-size="10">O</text></svg>',
+            iconSize: [24, 24],
+            iconAnchor: [12, 12]
+        });
+
+        // Data
+        const mutilationClusters = [
+            {
+                name: "Great Falls Area",
+                state: "Montana",
+                county: "Cascade",
+                lat: 47.5002,
+                lon: -111.3008,
+                years: "1974-1977",
+                cases: "~100",
+                source: "Keith Wolverton, Cascade County Sheriff",
+                prediction: "confirmed"
+            },
+            {
+                name: "Dulce Area",
+                state: "New Mexico",
+                county: "Rio Arriba",
+                lat: 36.9336,
+                lon: -106.9989,
+                years: "1975-1979",
+                cases: "26",
+                source: "Rommel Report, Gabe Valdez",
+                prediction: "partial"
+            },
+            {
+                name: "NE Colorado",
+                state: "Colorado",
+                county: "Logan/Elbert",
+                lat: 40.2,
+                lon: -103.5,
+                years: "1975-1977",
+                cases: "~200",
+                source: "NIDS database",
+                prediction: "origin"
+            },
+            {
+                name: "Kansas Hwy 81",
+                state: "Kansas",
+                county: "Multiple",
+                lat: 39.0,
+                lon: -97.4,
+                years: "1973-1974",
+                cases: "40",
+                source: "FBI FOIA files",
+                prediction: null
+            }
+        ];
+
+        const cwdDetections = [
+            { name: "Fort Collins (CWD Origin)", state: "Colorado", lat: 40.5853, lon: -105.0844, year: 1967, species: "mule deer (captive)", isOrigin: true },
+            { name: "Wild deer", state: "Wyoming", lat: 41.5, lon: -105.5, year: 1985, species: "mule deer" },
+            { name: "Wild deer", state: "Nebraska", lat: 42.5, lon: -103.8, year: 1999, species: "mule deer" },
+            { name: "White Sands", state: "New Mexico", lat: 32.9, lon: -106.4, year: 2002, species: "mule deer", note: "SOUTHERN NM - not Dulce area" },
+            { name: "Mt. Horeb", state: "Wisconsin", lat: 43.0, lon: -89.7, year: 2002, species: "white-tailed deer" },
+            { name: "Cheyenne County", state: "Kansas", lat: 39.8, lon: -101.8, year: 2006, species: "white-tailed deer" },
+            { name: "Carbon County", state: "Montana", lat: 45.3, lon: -109.4, year: 2017, species: "mule deer", note: "First MT wild detection" },
+            { name: "Great Falls (Cascade)", state: "Montana", lat: 47.5, lon: -111.3, year: 2023, species: "mule deer", note: "EXACT MATCH to 1975 mutilations", highlight: true }
+        ];
+
+        // Add mutilation markers
+        mutilationClusters.forEach(m => {
+            const marker = L.marker([m.lat, m.lon], { icon: mutilationIcon }).addTo(map);
+            marker.bindPopup(`
+                <div class="popup-title">${m.name}, ${m.state}</div>
+                <strong>Mutilation Cluster</strong><br>
+                Years: ${m.years}<br>
+                Cases: ${m.cases}<br>
+                County: ${m.county}<br>
+                Source: ${m.source}<br>
+                ${m.prediction ? `<br><strong>NIDS Prediction: ${m.prediction.toUpperCase()}</strong>` : ''}
+            `);
+        });
+
+        // Add CWD markers
+        cwdDetections.forEach(c => {
+            const icon = c.isOrigin ? originIcon : cwdIcon;
+            const marker = L.marker([c.lat, c.lon], { icon: icon }).addTo(map);
+            marker.bindPopup(`
+                <div class="popup-title">${c.name}, ${c.state}</div>
+                <strong>CWD Detection</strong><br>
+                Year: ${c.year}<br>
+                Species: ${c.species}<br>
+                ${c.note ? `<br><em>${c.note}</em>` : ''}
+            `);
+        });
+
+        // Add prediction lines
+        // Great Falls: Confirmed
+        L.polyline([
+            [47.5002, -111.3008],  // Mutilation cluster
+            [47.5, -111.3]         // CWD detection
+        ], {
+            color: '#27ae60',
+            weight: 3,
+            dashArray: '10, 5',
+            opacity: 0.8
+        }).addTo(map).bindPopup('<strong>CONFIRMED</strong><br>47 year lag, exact geographic match');
+
+        // Great Falls to Fort Collins (CWD spread path)
+        L.polyline([
+            [40.5853, -105.0844],  // Fort Collins (origin)
+            [47.5, -111.3]         // Great Falls
+        ], {
+            color: '#e94560',
+            weight: 2,
+            dashArray: '5, 10',
+            opacity: 0.5
+        }).addTo(map).bindPopup('<strong>CWD Spread Path</strong><br>~1040 km, arrived 93 years early');
+
+        // Dulce to White Sands (partial prediction)
+        L.polyline([
+            [36.9336, -106.9989],  // Dulce (mutilations)
+            [32.9, -106.4]         // White Sands (CWD)
+        ], {
+            color: '#f39c12',
+            weight: 3,
+            dashArray: '10, 5',
+            opacity: 0.8
+        }).addTo(map).bindPopup('<strong>PARTIAL</strong><br>CWD in NM, but ~300 miles from mutilation cluster');
+
+        // Draw concentric circles from Fort Collins showing expected spread
+        const fortCollins = [40.5853, -105.0844];
+        [1985, 2000, 2015, 2030].forEach((year, i) => {
+            const yearsFromOrigin = year - 1967;
+            const radiusKm = yearsFromOrigin * 7;  // 7 km/year
+            L.circle(fortCollins, {
+                radius: radiusKm * 1000,  // Convert to meters
+                color: '#e94560',
+                fillColor: '#e94560',
+                fillOpacity: 0.05,
+                weight: 1,
+                dashArray: '5, 5'
+            }).addTo(map).bindPopup(`Expected CWD extent by ${year}<br>(at 7 km/year spread rate)`);
+        });
+
+        // Add labels
+        L.marker([40.5853, -105.0844], {
+            icon: L.divIcon({
+                className: 'label',
+                html: '<div style="background: #e94560; color: white; padding: 2px 5px; border-radius: 3px; font-size: 10px; white-space: nowrap;">CWD ORIGIN 1967</div>',
+                iconAnchor: [-10, 10]
+            })
+        }).addTo(map);
+    </script>
+</body>
+</html>
