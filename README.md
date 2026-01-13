@@ -1,175 +1,96 @@
-# SPECTER: Spatial Paranormal Event Correlation & Terrain Analysis Engine
+# SPECTER
 
-**Author:** Tars
+**Seismic-Perceptual Event Correlation and Temporal Evaluation Repository**
 
-A geospatial data science project investigating correlations between paranormal reports and environmental factors, with focus on seismic activity.
+Analyzing the correlation between anomalous aerial phenomenon reports and micro-seismic activity.
+
+## Overview
+
+SPECTER investigates whether reports of unexplained aerial phenomena correlate with tectonic activity. Using 67 years of data from the Obiwan UFO Sighting Dataset and USGS earthquake records, the project identifies statistically significant relationships between seismic events and anomalous report clustering.
 
 ## Key Findings
 
-Analysis of 1,904 paranormal reports across Portland, OR and San Francisco Bay Area reveals:
+### Phase 1: Correlation Established
 
-1. **Seismic Correlation**: Reports occur 3.4x more frequently (Portland) and 8.3x more frequently (SF) during seismically active periods compared to quiet periods (>30 days without earthquakes).
+- **Portland, OR:** 3.44x elevation in reports during seismically active periods (p < 0.0001)
+- **San Francisco, CA:** 8.32x elevation (p < 0.0001)
+- Spatial clustering along known fault lines
+- Dose-response relationship between seismic frequency and report density
 
-2. **Temporal Pattern**: Reports peak 1-2 days after earthquakes and decay exponentially over 7 days.
+### Phase 2: Mechanism Discrimination
 
-3. **Spatial Clustering**: Reports cluster significantly near active fault lines (Portland Hills Fault, San Andreas, Hayward).
+- **Precursor Signal:** Reports elevate exponentially BEFORE earthquakes, peaking on Day 0 (29.5x baseline in SF)
+- **Spatial Persistence:** Same coordinate produced reports for 54 years in Portland, maintaining top rank across 6 decades
+- **Physical Effects:** Reports with physiological symptoms show 1.4x higher seismic correlation than visual-only
+- **Fault Proximity:** Fremont hotspot (directly on Hayward Fault) shows highest correlation at 4.33x
+- **Duration Asymmetry:** Portland precursor sightings 12x shorter than post-event (50s vs 600s median)
 
-4. **Night Bias**: 48-64% of reports occur at night (expected: 37.5%).
+### Bird Behavior Investigation
 
-5. **Dose-Response**: The effect scales with regional earthquake frequency, suggesting a causal relationship.
+Community feedback suggested some reports might be birds disturbed by piezoelectric emissions. Analysis of V-formation/chevron shaped reports found:
+
+- **Stronger Precursor Signal:** V-formations show 2.19x before/after ratio vs 1.76x for classic UFO shapes
+- **Post-Quake Drop:** 80% reduction in V-formation reports after Day 0 (consistent with stress release)
+- **October Spike:** Peak V-formation reports during fall migration
+- **Bird Mentions:** Reports explicitly mentioning birds show highest seismic correlation (1.60x)
+
+**Conclusion:** Partial support for bird hypothesis. Some V-formation reports may be disturbed bird flocks, but the precursor pattern exists across all shape categories, suggesting a broader geological phenomenon.
+
+See [bird_investigation/](bird_investigation/) for full analysis.
+
+## Papers
+
+- **Phase 1:** [SPECTER_Phase1_Paper.pdf](paper/SPECTER_Phase1_Paper.pdf) - Correlation analysis
+- **Phase 2:** [SPECTER_Phase2_Paper.pdf](paper/SPECTER_Phase2_Paper.pdf) - Mechanism discrimination
+
+OSF Project: [osf.io/x2bmz](https://osf.io/x2bmz)
+
+## Repository Structure
+
+```
+specter/
+├── data/                    # Raw and processed datasets
+├── scripts/                 # Analysis scripts
+│   ├── specter_phase1.py
+│   ├── specter_phase2_mechanism.py
+│   ├── specter_phase2_5_deep.py
+│   └── specter_phase2_6_comprehensive.py
+├── figures/                 # Generated figures
+│   ├── figure1_precursor_ramp_sf.png
+│   ├── figure2_precursor_comparison.png
+│   ├── figure3_spatial_persistence.png
+│   ├── figure4_physical_effects.png
+│   ├── figure5_sf_hotspots.png
+│   └── figure6_duration.png
+├── bird_investigation/      # Bird behavior analysis
+│   ├── search_bird_terms.py
+│   ├── v_formation_seismic_test.py
+│   └── README.md
+├── paper/                   # Publication PDFs
+└── README.md
+```
+
+## Replication
+
+```bash
+pip install pandas numpy scipy matplotlib seaborn
+python scripts/specter_phase1.py
+python scripts/specter_phase2_mechanism.py
+```
 
 ## Data Sources
 
-| Dataset | Source | URL |
-|---------|--------|-----|
-| UFO Reports | Obiwan/NUFORC | https://github.com/planetsig/ufo-reports |
-| Earthquakes | USGS FDSNWS | https://earthquake.usgs.gov/fdsnws/event/1/ |
-| Infrastructure | OpenStreetMap | https://overpass-api.de/api/interpreter |
-| Fault Lines | USGS | https://earthquake.usgs.gov/hazards/qfaults/ |
-
-## Installation
-
-```bash
-# Clone repository
-git clone https://github.com/[username]/specter.git
-cd specter
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-## Dependencies
-
-- Python 3.10+
-- pandas, numpy, scipy
-- geopandas, shapely
-- scikit-learn, hdbscan
-- matplotlib, seaborn, folium
-- requests
-
-## Usage
-
-### 1. Data Ingestion
-
-```bash
-# Fetch and process paranormal reports (Oregon)
-python scripts/ingest_obiwan.py
-
-# Fetch infrastructure data
-python scripts/ingest_infrastructure.py
-
-# Fetch geological/earthquake data
-python scripts/ingest_geology.py
-```
-
-### 2. Run Analyses
-
-```bash
-# Spatial clustering
-python scripts/analysis_clustering.py
-
-# Seismic-temporal correlation
-python scripts/analysis_seismic_correlation.py
-
-# Temporal patterns
-python scripts/analysis_temporal.py
-
-# Multi-layer hotspot detection
-python scripts/analysis_hotspots.py
-```
-
-### 3. San Francisco Replication
-
-```bash
-# Run full SF Bay Area analysis
-python scripts/sf_analysis.py
-```
-
-### 4. Generate Outputs
-
-```bash
-# Generate interactive maps
-python scripts/generate_map.py
-
-# Generate publication figures
-python scripts/generate_figures.py
-
-# Generate executive summary
-python scripts/generate_report.py
-```
-
-## Project Structure
-
-```
-specter-release/
-├── README.md
-├── requirements.txt
-├── scripts/
-│   ├── config.py              # Configuration and constants
-│   ├── db_utils.py            # Database utilities
-│   ├── ingest_*.py            # Data ingestion scripts
-│   ├── analysis_*.py          # Analysis scripts
-│   ├── generate_*.py          # Output generation
-│   └── sf_analysis.py         # SF Bay Area replication
-├── data/
-│   ├── raw/
-│   │   └── FETCH_DATA.md      # Instructions to fetch raw data
-│   └── outputs/
-│       ├── clustering_results.json
-│       ├── correlation_results.json
-│       ├── seismic_correlation_results.json
-│       ├── temporal_results.json
-│       ├── hotspot_results.json
-│       └── sf_analysis_results.json
-├── figures/
-│   ├── figure1_hotspot_maps.png
-│   ├── figure2_days_histogram.png
-│   ├── figure3_active_quiet.png
-│   ├── figure4_scaling.png
-│   ├── figure5_timeline.png
-│   ├── specter_portland.html  # Interactive map
-│   └── specter_sf.html        # Interactive map
-└── paper/
-    └── SPECTER_Executive_Summary.md
-```
-
-## Results Summary
-
-| Metric | Portland | SF Bay Area |
-|--------|----------|-------------|
-| Total Reports | 745 | 1,159 |
-| Spatial Clusters | 8 | 48 |
-| Clustering p-value | < 0.0001 | < 0.0001 |
-| Night Report Ratio | 63.8% | 48.3% |
-| Active/Quiet Ratio | 3.4x | 8.3x |
-| Peak Day After EQ | Day 1 | Day 2 |
-
-## Database Setup (Optional)
-
-The scripts can use Supabase/PostgreSQL with PostGIS for data storage. Update `config.py` with your credentials:
-
-```python
-SUPABASE_URL = "your-url"
-SUPABASE_KEY = "your-key"
-```
-
-Or run locally by modifying scripts to use pandas DataFrames instead.
+- **Obiwan UFO Sighting Dataset** (1947-2014): Kaggle
+- **USGS Earthquake Catalog**: earthquake.usgs.gov
 
 ## Citation
 
-If you use this project in research, please cite:
-
 ```
-SPECTER: Spatial Paranormal Event Correlation & Terrain Analysis Engine
-https://github.com/[username]/specter
+SPECTER Project (2026). Seismic-Perceptual Event Correlation and Temporal Evaluation.
+GitHub: github.com/0100001001101111/specter
+OSF: osf.io/x2bmz
 ```
 
 ## License
 
-MIT License
-
-## Acknowledgments
-
-- USGS Earthquake Hazards Program
-- National UFO Reporting Center (NUFORC)
-- OpenStreetMap contributors
+MIT
